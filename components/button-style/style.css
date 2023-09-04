@@ -1,0 +1,15 @@
+
+#button {
+    width: 100%;
+    background-color: #fb6100;
+    border: none;
+    border-radius: 50rem;
+    height: 55px;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+   }
+
+   #button:hover {
+    background-color: #be5c24;
+   }
