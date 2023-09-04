@@ -8,6 +8,9 @@
     cursor: pointer;
     text-align: center;
     align-items: center;
+    color: #dfe0df;
+    font-size: 20px;
+    font-weight: bold;
    }
 
    #button:hover {
