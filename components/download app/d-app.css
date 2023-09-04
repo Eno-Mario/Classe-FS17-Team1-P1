@@ -1,0 +1,29 @@
+.download-app {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.download-app * {
+  margin: auto;
+}
+
+.download-app img {
+  max-width: 220px;
+}
+
+.scarica-app h2 {
+  font-weight: 1000;
+  font-size: 2rem;
+}
+
+.scarica-app p {
+  margin-top: 8px;
+  margin-bottom: 24px;
+  color: rgb(72, 72, 72);
+}
+
+.icone-store * {
+  height: 40px;
+  width: 135px;
+}
