@@ -1,4 +1,4 @@
-a:hover {
+.linkList-wrapper ul li a:hover {
   text-decoration: underline;
 }
 
@@ -7,7 +7,7 @@ a:hover {
     display: none;
   }
 
-  h2 {
+  .linkList-wrapper h2 {
     padding-left: 8px;
     font-size: 20px;
     font-weight: bold;
@@ -29,7 +29,7 @@ a:hover {
   .list {
     margin-bottom: 16px;
   }
-  li {
+  .linkList-wrapper ul li {
     padding: 8px;
   }
 }
@@ -60,7 +60,7 @@ a:hover {
      transition: transform 0.3s;
    
   }
-  h2 {
+  summary h2 {
     display: flex; 
     justify-content: space-between;
     align-items: center;
@@ -73,7 +73,7 @@ a:hover {
     margin-bottom: 1rem;
     padding-left: 2rem;
   }
-  li {
+  .list li {
     padding-bottom: 1rem;
   }
   .list {

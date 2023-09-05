@@ -1,13 +1,5 @@
-html,
-body {
-  width: 100%;
-}
 #complete_searchbar {
   background-color: #ffffff;
-  margin-top: 184px;
-  margin-bottom: 184px;
-  margin-left: 149.2px;
-  margin-right: 149.2px;
   padding: 10px;
   width: 800px;
   height: 234px;
@@ -20,15 +12,15 @@ body {
   margin-inline: auto;
 }
 
-.search_button:hover {
+#search_button:hover {
   background-color: #be5c24;
 }
-h1 {
+#complete_searchbar h1 {
   color: #fb6100;
   font-size: 50px;
   font-weight: bold;
 }
-h2 {
+#complete_searchbar div h2 {
   font-size: 20px;
   color: #393939;
 }
@@ -44,14 +36,14 @@ h2 {
   align-items: center;
   padding-right: 5px;
 }
-input {
+#searchbar_container input {
   width: 100%;
   height: 55px;
   flex: 1;
   padding: 16px;
   border: none;
 }
-.search_button {
+#search_button {
   padding: 16px;
   background-color: #fb6100;
   border: none;
@@ -76,14 +68,14 @@ input {
   transform: translateY(-50%);
   cursor: text;
 }
-input:focus + .placeholder,
-input:not(:placeholder-shown) + .placeholder {
+#searchbar_container input:focus + .placeholder,
+#searchbar_container input:not(:placeholder-shown) + .placeholder {
   top: 7px;
   -webkit-transform: scale(0.7) translateY(-10%) translateX(-8.5px);
   transform: scale(0.7) translateY(-10%) translateX(-8.5px);
 }
 
-input,
+#searchbar_container input,
 .placeholder {
   -webkit-user-select: none;
   -moz-user-select: none;

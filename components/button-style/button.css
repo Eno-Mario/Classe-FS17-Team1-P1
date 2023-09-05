@@ -1,6 +1,5 @@
 
-#button {
-    width: 100%;
+.button {
     background-color: #fb6100;
     border: none;
     border-radius: 50rem;
@@ -13,6 +12,6 @@
     font-weight: bold;
    }
 
-   #button:hover {
+   .button:hover {
     background-color: #be5c24;
    }
