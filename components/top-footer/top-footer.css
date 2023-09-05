@@ -32,6 +32,11 @@
   .linkList-wrapper ul li {
     padding: 8px;
   }
+
+  .linkList-wrapper ul {
+    margin-top: 16px;
+  }
+
 }
 
 @media (max-width: 1023px) {

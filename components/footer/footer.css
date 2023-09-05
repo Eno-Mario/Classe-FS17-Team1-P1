@@ -1,0 +1,11 @@
+footer {
+    background-color: #efedea;
+}
+
+footer #large_footer, .footer_Bottom, .contact {
+    padding: 32px;
+}
+
+.fondo-pg {
+    padding-bottom: 16px;
+}
