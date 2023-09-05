@@ -14,7 +14,7 @@
 }
 
 .listFooter > li {
-  padding: 16px;
+  margin-right:56px;
 }
 
 .icons {
@@ -28,7 +28,7 @@
   text-decoration: underline;
   font-size: larger;
   font-weight: bold;
-}
+  }
 
 .text_Piva {
   padding: 16px;
