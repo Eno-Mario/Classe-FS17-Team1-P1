@@ -43,9 +43,12 @@ a:hover {
     padding: 1rem;
     list-style: none;
     background-color: #dfe0df;
+    
   }
   .div-link-list {
     border-bottom: 0.5px solid #dbd9d7;
+    align-items: center;
+
   }
 
    summary {
@@ -54,6 +57,13 @@ a:hover {
     cursor: pointer;
     margin: 0;
     padding: 1rem;
+     transition: transform 0.3s;
+   
+  }
+  h2 {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
   }
   .list {
     list-style: none;
@@ -69,4 +79,10 @@ a:hover {
   .list {
     display: block;
   }
+  .link-icon {
+ 
+  height: 9px;
+  width: 16px;
+ }
+ 
 }
