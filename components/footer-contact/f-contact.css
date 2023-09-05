@@ -6,7 +6,7 @@
 
 .contacts {
   width: 100%;
-  padding: 32px;
+  padding: 0px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
