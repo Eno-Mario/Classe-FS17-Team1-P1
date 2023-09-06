@@ -1,5 +1,6 @@
 .sezione-opzioni {
   margin: 25px;
+  max-width: 95%;
 }
 
 .sezione-opzioni h2 {
@@ -20,7 +21,9 @@
   max-height: 195px;
   overflow-x: auto;
   max-width: 1200px;
-  width: auto;
+
+  flex-basis: auto;
+  height: auto;
 }
 
 .griglia-opzioni * {
