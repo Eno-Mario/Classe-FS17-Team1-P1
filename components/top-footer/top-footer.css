@@ -49,7 +49,7 @@
     padding: 1rem;
     list-style: none;
     background-color: none;
-    
+    width: 100%;
   }
   .div-link-list {
     border-bottom: 0.5px solid #dbd9d7;
