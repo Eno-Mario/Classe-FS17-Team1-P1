@@ -1,0 +1,17 @@
+.contenitore-header {
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  max-height: 80px;
+  min-width: 300px;
+  max-width: 1200px;
+  position: relative;
+  width: 100%;
+}
+
+.maxwidth {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+}
