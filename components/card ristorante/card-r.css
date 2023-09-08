@@ -1,0 +1,203 @@
+/* general properties  */
+.restaurant-card-img {
+  width: auto;
+  background-size: cover;
+  background-position: 50%;
+  border-radius: 12px;
+  position: relative;
+}
+.logo-on-card {
+  top: 16px;
+  left: 16px;
+  position: absolute;
+  max-width: 100%;
+}
+
+.food-type {
+  margin-bottom: 8px;
+}
+.delivery {
+  margin-bottom: 8px;
+}
+.text-style {
+  color: #242e30;
+}
+.text-style h3 {
+  font-weight: 800;
+  width: 100%;
+}
+.delivery-icon {
+  width: 14px;
+  height: auto;
+  margin-right: 4px;
+}
+
+.block-sale {
+  flex: 0 0 100%;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+.text-style:focus,
+.text-style:hover {
+  color: #354447;
+}
+.rating,
+.distance {
+  font-size: 16px;
+  padding-left: 4px;
+
+  font-weight: 700;
+}
+.star-icon {
+  width: 14px;
+  height: auto;
+  margin-right: 4px;
+
+  fill-rule: evenodd;
+  transform: translate(-3, -3);
+}
+
+.food-type li:nth-child(2)::before {
+  content: "•";
+  color: rgb(60, 76, 79);
+  padding-right: 2px;
+  padding-left: 2px;
+}
+.icon-sale {
+  width: 14px;
+  height: auto;
+  margin-right: 4px;
+}
+
+.block-sale,
+.food-type,
+.delivery {
+  margin-top: 1rem;
+}
+
+/* general properties  */
+
+@media (min-width: 48.001em) {
+  .restaurant-card-container {
+    display: grid;
+    grid-template-columns: minmax(180px, 30%) 1fr;
+    grid-gap: 8px 16px;
+    margin-top: 30px;
+  }
+
+  .restaurant-card-img {
+    min-height: 125px;
+    height: 100%;
+  }
+  .restaurant-card-text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: dense;
+
+    grid-auto-rows: min-content;
+    grid-gap: 0 12px;
+    overflow-wrap: break-word;
+    align-items: flex-start;
+    padding: 8px 0;
+    grid-column: 2/3;
+  }
+  .text-style h3 {
+    font-size: 20px;
+    font-weight: 800;
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  .distance-icon {
+    width: 14px;
+    height: 100%;
+    margin-right: 4px;
+  }
+  .food-type {
+    display: flex;
+    flex-wrap: nowrap;
+    grid-column: 1/2;
+  }
+  .text-style h3 {
+    grid-column: 1/3;
+  }
+  .block-sale {
+    grid-column: 2/3;
+  }
+}
+
+/* mobile */
+@media (max-width: 48em) {
+  .restaurant-card-container {
+    width: auto;
+    text-decoration: none;
+
+    display: grid;
+    grid-gap: 12px;
+    grid-template-columns: 1fr;
+  }
+
+  .restaurant-card-img {
+    width: 100%;
+    height: 144px;
+  }
+  .restaurant-card-text {
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+  .rating {
+    line-height: 1.43;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    white-space: nowrap;
+  }
+  .food-type {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 0 4px;
+    padding: 0;
+    list-style: none;
+  }
+  .block-distance {
+    display: flex;
+  }
+  .text-style h3 {
+    font-size: 20px;
+    font-weight: 800;
+    width: 100%;
+    margin-bottom: 8px;
+    margin: 0;
+    font-display: block;
+  }
+  .block-rating {
+    line-height: 1.43;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    white-space: nowrap;
+    margin: 0 8px 0 0;
+  }
+  .food-type {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+  }
+  .delivery-order {
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .delivery {
+    display: flex;
+    align-items: center;
+  }
+  .icon-distance,
+  .delivery-icon {
+    display: none;
+  }
+}
