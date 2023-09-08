@@ -1,0 +1,59 @@
+.checkbox-cucina {
+  width: calc(100% -16px);
+  margin: 8px;
+}
+
+.cucina {
+  display: flex;
+  width: 100%;
+  padding: 8px 16px;
+  cursor: pointer;
+  border: 1px solid #a9a9a9;
+  border-radius: 20px;
+}
+
+.hidden {
+  align-self: center;
+  opacity: 0;
+  width: 0;
+  min-width: 0;
+  transform: translateZ(0) scale(0) rotate(-45deg);
+}
+
+.cucina span {
+  color: #1e1e1e;
+  font-weight: 400;
+}
+
+.cucina span:first-of-type {
+  margin-right: auto;
+}
+
+.cucina span:last-of-type {
+  padding-left: 16px;
+}
+
+.cucina:hover svg.hidden {
+  transform: translateZ(0) scale(1);
+  opacity: 1;
+  width: 16px;
+  min-width: 16px;
+  margin-right: 8px;
+}
+
+input:checked ~ .cucina svg.hidden {
+  transform: translateZ(0) scale(1);
+  opacity: 1;
+  width: 16px;
+  min-width: 16px;
+  margin-right: 8px;
+}
+
+input:checked ~ .cucina {
+  border: 1px solid #017a39;
+}
+
+input:checked ~ .cucina * {
+  color: #017a39;
+  fill: #017a39;
+}
