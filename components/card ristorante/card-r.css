@@ -28,6 +28,10 @@
   width: 100%;
 }
 
+.text-style h3:hover {
+  text-decoration: underline;
+}
+
 .delivery-icon {
   width: 14px;
   height: auto;
