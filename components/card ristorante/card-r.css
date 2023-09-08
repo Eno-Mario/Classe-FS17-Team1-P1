@@ -85,6 +85,7 @@
 .block-rating {
  display: flex; 
  flex-wrap: nowrap;
+ margin-bottom: 16px;
 }
 
 /* Desktop */
