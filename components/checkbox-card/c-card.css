@@ -1,0 +1,55 @@
+.checkboxCard {
+  max-width: 140px;
+  margin: 0 5px;
+}
+
+.c-card {
+  cursor: pointer;
+}
+
+.immagine-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  flex-flow: column wrap;
+  max-width: inherit;
+  position: relative;
+}
+
+.immagine-checkbox .background {
+  background-color: #ff8000;
+  background-size: 150%;
+  width: 92%;
+  border-radius: 8px;
+  display: block;
+  padding-top: 60%;
+  position: absolute;
+  max-width: inherit;
+}
+
+.immagine-checkbox img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  z-index: 1;
+}
+
+.c-card:hover .nomeCucina svg.hidden {
+  transform: translateZ(0) scale(1);
+  opacity: 1;
+  width: 16px;
+  min-width: 16px;
+  margin-right: 8px;
+}
+
+input:checked ~ .c-card .nomeCucina svg.hidden {
+  transform: translateZ(0) scale(1);
+  opacity: 1;
+  width: 16px;
+  min-width: 16px;
+  margin-right: 8px;
+}
+
+input:checked ~ .c-card .nomeCucina * {
+  color: #017a39;
+}
