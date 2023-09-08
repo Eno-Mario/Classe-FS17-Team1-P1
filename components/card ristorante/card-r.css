@@ -1,4 +1,5 @@
 /* general properties  */
+
 .restaurant-card-img {
   width: auto;
   background-size: cover;
@@ -26,6 +27,7 @@
   font-weight: 800;
   width: 100%;
 }
+
 .delivery-icon {
   width: 14px;
   height: auto;
@@ -44,24 +46,18 @@
 .rating,
 .distance {
   font-size: 16px;
-  padding-left: 4px;
-
   font-weight: 700;
 }
 .star-icon {
   width: 14px;
   height: auto;
-  margin-right: 4px;
-
-  fill-rule: evenodd;
-  transform: translate(-3, -3);
 }
 
 .food-type li:nth-child(2)::before {
   content: "•";
   color: rgb(60, 76, 79);
-  padding-right: 2px;
-  padding-left: 2px;
+  padding-right: 4px;
+  padding-left: 4px;
 }
 .icon-sale {
   width: 14px;
@@ -69,14 +65,29 @@
   margin-right: 4px;
 }
 
-.block-sale,
-.food-type,
+
 .delivery {
-  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+  flex-wrap: wrap;
+  width: auto;
+}
+.delivery p:nth-child(2)::before {
+  content: "•";
+  color: rgb(60, 76, 79);
+  padding-right: 4px;
+  padding-left: 4px;
+}
+.block-distance {
+  width: auto;
+}
+.block-rating {
+ display: flex; 
+ flex-wrap: nowrap;
 }
 
-/* general properties  */
-
+/* Desktop */
 @media (min-width: 48.001em) {
   .restaurant-card-container {
     display: grid;
@@ -123,6 +134,10 @@
   .block-sale {
     grid-column: 2/3;
   }
+  .delivery {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 /* mobile */
@@ -144,6 +159,7 @@
     display: flex;
     align-items: center;
     flex-flow: row wrap;
+    grid-gap: 0 12px;
   }
   .rating {
     line-height: 1.43;
@@ -162,17 +178,24 @@
   }
   .block-distance {
     display: flex;
+    flex-wrap: wrap;
+   
+ 
   }
+ 
   .text-style h3 {
     font-size: 20px;
     font-weight: 800;
     width: 100%;
     margin-bottom: 8px;
-    margin: 0;
-    font-display: block;
+
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
   }
   .block-rating {
-    line-height: 1.43;
+   
     display: flex;
     align-items: center;
     padding: 0;
@@ -184,20 +207,17 @@
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    padding-inline-start: 40px;
+   
   }
-  .delivery-order {
-    margin-bottom: 4px;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  .delivery {
-    display: flex;
-    align-items: center;
-  }
+
   .icon-distance,
   .delivery-icon {
     display: none;
+  }
+  .delivery p {
+    width: auto;
+  }
+  .delivery {
+    margin-top: 8px;
   }
 }
