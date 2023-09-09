@@ -1,0 +1,128 @@
+.search-container {
+  width: 100%;
+  position: relative;
+  margin-bottom: 24px;
+}
+.search-form {
+  width: 100%;
+  position: relative;
+}
+.searchbar {
+  display: flex;
+  border: 1.5px solid rgb(142, 142, 255);
+  width: 100%;
+  position: relative;
+  box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 50rem;
+  z-index: 2;
+}
+
+.is-visuallyHidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.serch-icon {
+  display: flex;
+  justify-content: flex-start;
+}
+.search-icon svg {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+#dish-search {
+  flex: 1;
+  position: relative;
+  width: 100%;
+  padding-left: 56px;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  padding-right: 116px;
+}
+#dish-search::placeholder {
+  color: rgb(73, 73, 73);
+}
+/* BOTTONE DI CANCELLAZIONE (non ci dovrebbe essere il placeholder per farlo funzionare*/
+/* .cancel-button {
+  display: none;
+}
+
+#dish-search:not(:placeholder-shown) + .cancel-button {
+    position: absolute;
+  display: flex;
+}
+.cancel-button{
+    height: 48px;
+    padding: 16px;
+} */
+
+.searchInput-button {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: calc(100% - 8px);
+  background-color: #f36805;
+  color: white;
+  border-radius: 50rem;
+  border: 1px solid rgba(0, 0, 0, 0);
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 4px !important;
+  border: 1px;
+  padding: 10px 24px;
+}
+
+
+
+/* 
+.dropdown-container {
+  display: block;
+  top: 32px;
+  padding-top: 32px;
+  height: auto;
+  overflow-y: auto;
+  box-shadow: 0 14px 45px 2px rgba(0, 0, 0, 0.14);
+  border-top: 1px solid #dbd9d7;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  background-color: #fff;
+  padding-bottom: 4px;
+  padding-top: 32px;
+  border-radius: 0 0 16px 16px;
+visibility: hidden;
+}
+
+.dropdown-list {
+  position: relative;
+  margin: 4px 0;
+  padding: 0 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+.option {
+  position: relative;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 12px 16px;
+  display: block;
+  cursor: pointer;
+}
+.search-container:active .dropdown-container {
+  visibility: visible;
+} */
