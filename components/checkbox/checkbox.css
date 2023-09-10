@@ -1,6 +1,7 @@
 .checkbox-cucina {
   width: calc(100% -16px);
   margin: 8px;
+  height: 38px;
 }
 
 .cucina {
