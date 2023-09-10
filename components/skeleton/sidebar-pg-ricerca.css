@@ -1,0 +1,35 @@
+.testata-lista-checkbox {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  align-items: center;
+}
+
+.titolo-lista {
+  display: flex;
+  align-items: center;
+  height: 33px;
+}
+
+.titolo-lista p {
+  text-wrap: nowrap;
+}
+
+.titolo-lista svg {
+  height: 16px;
+  width: auto;
+  padding-right: 8px;
+}
+
+.bottone-resetta {
+  border: 1px solid #a9a9a9;
+  border-radius: 20px;
+  padding: 6px 8px;
+  font-size: .875rem;
+  cursor: pointer;
+}
+
+.bottone-resetta:hover {
+    background-color: #d9d9d9;
+
+}
