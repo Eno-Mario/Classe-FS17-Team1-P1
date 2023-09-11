@@ -1,14 +1,27 @@
 footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #efedea;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #efedea;
 }
 
-footer #large_footer, .footer_Bottom, .contacts {
-    padding: 32px;
+footer #large_footer,
+.footer_Bottom,
+.contacts {
+  padding: 32px;
 }
 
 .fondo-pg {
-    padding-bottom: 16px;
+  padding-bottom: 16px;
+}
+
+@media (max-width: 768px) {
+  .contacts {
+    padding: 16px;
+  }
+
+  .footer_Bottom {
+    padding: 0px;
+  }
+
 }

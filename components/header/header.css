@@ -11,11 +11,7 @@ header {
     0 8px 20px -3px rgba(0, 0, 0, 0.1), 0 4px 8px -2px rgba(0, 0, 0, 0.06);
 }
 
-.contenitore-header div a {
-  display: flex;
-  width: fit-content;
-  border-radius: 50px;
-}
+
 
 .icona a {
   height: 80px;
@@ -62,4 +58,36 @@ header {
 .navbar ul li a svg {
   margin-right: 4px;
   height: 24px;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: row;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+
+  .navbar {
+    height: 36px;
+    width: 10%;
+    order: -1;
+    max-height: 80px;
+  }
+
+  .navbar .hamburger-menu,
+  .navbar .hamburger-menu svg {
+    display: block;
+    height: inherit;
+    fill: #fb6100;
+  }
+
+  .icona a svg {
+    height: 24px;
+  }
+
+  .icona {
+    margin: auto;
+  }
 }

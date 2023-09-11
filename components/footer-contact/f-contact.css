@@ -40,27 +40,33 @@
   width: 135px;
 }
 
-.feedback{
-    cursor: pointer;
+.feedback {
+  cursor: pointer;
 }
 
-.feedback p{
-    margin: 0 0 4px 0;
-    font-size: .875rem;
+.feedback p {
+  margin: 0 0 4px 0;
+  font-size: 0.875rem;
 }
 
-.feedback button{
-    text-decoration: underline;
-    font-size: .875rem;
-    border: 0;
+.feedback button {
+  text-decoration: underline;
+  font-size: 0.875rem;
+  border: 0;
 }
 
 .follow .inline-icon {
-    width: 302px;
+  width: 302px;
 }
 
-.follow svg{
-    height: 28px;
-    width: 28px;
-    margin-right: 12px;
+.follow svg {
+  height: 28px;
+  width: 28px;
+  margin-right: 12px;
+}
+
+@media (max-width: 768px) {
+  .contacts {
+    flex-direction: column;
+  }
 }
