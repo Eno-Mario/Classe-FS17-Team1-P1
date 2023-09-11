@@ -44,6 +44,7 @@
   border-radius: 50rem;
   align-items: center;
   padding-right: 5px;
+  position: relative;
 }
 #searchbar_container input {
   width: 100%;
@@ -80,6 +81,7 @@
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   cursor: text;
+  text-transform: capitalize;
 }
 #searchbar_container input:focus + .placeholder,
 #searchbar_container input:not(:placeholder-shown) + .placeholder {
