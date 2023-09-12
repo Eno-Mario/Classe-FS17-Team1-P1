@@ -12,13 +12,11 @@
   gap: 1rem;
   margin-inline: auto;
   position: relative;
-  margin: -45px auto auto;
-  margin-top: -184px;
+  margin-top: -184px; 
   color: #425457;
   font-size: 16px;
   text-rendering: optimizeLegibility;
   font-weight: 400;
-
 }
 
 #search_button:hover {
@@ -35,7 +33,6 @@
 }
 
 #searchbar_container {
-  
   width: 95%;
   height: 64px;
   display: flex;
@@ -102,4 +99,32 @@
   transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
+.button-mobile {
+  display: none;
+}
 
+@media (max-width: 768px) {
+  #complete_searchbar h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  #complete_searchbar div h2 {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .button-desktop {
+    display: none;
+  }
+
+  .button-mobile {
+    display: inline-block;
+    width: 20px;
+    height: 25px;
+  }
+
+  #complete_searchbar {
+   margin: -45px auto auto; 
+  }
+}

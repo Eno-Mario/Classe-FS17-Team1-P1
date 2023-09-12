@@ -12,6 +12,10 @@
   max-width: 220px;
 }
 
+.download-app > h2 {
+  display: none;
+}
+
 .scarica-app h2 {
   font-weight: 1000;
   font-size: 2rem;
@@ -26,4 +30,44 @@
 .icone-store * {
   height: 40px;
   width: 135px;
+}
+
+@media (max-width: 768px) {
+  .download-app img {
+    overflow: hidden;
+    max-width: 120px;
+    margin-top: 16px;
+    grid-column: 1;
+    grid-row: 2;
+    line-height: 1.5;
+  }
+
+  .download-app > h2 {
+    display: block;
+    font-weight: 1000;
+    font-size: 1rem;
+    grid-column: 1/3;
+    grid-row: 1;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  .scarica-app h2 {
+    display: none;
+  }
+
+  .download-app {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    gap: 1rem;
+  }
+
+  .scarica-app {
+    margin-left: 16px;
+    grid-column: 2;
+    grid-row: 2;
+    text-align: left;
+    line-height: 1.5;
+  }
 }

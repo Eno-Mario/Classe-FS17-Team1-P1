@@ -33,3 +33,15 @@
 .text_Piva {
   padding: 16px;
 }
+
+
+@media (max-width: 768px) {
+  .footer_Bottom {
+    flex-direction: column;
+    align-items: baseline;
+  }
+
+  .listFooter {
+    order: -1;
+  }
+}
