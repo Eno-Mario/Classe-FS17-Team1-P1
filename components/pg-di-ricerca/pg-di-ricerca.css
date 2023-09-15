@@ -1,0 +1,28 @@
+.contenitore-header {
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  max-height: 80px;
+  min-width: 300px;
+  max-width: 1200px;
+  position: relative;
+  width: 100%;
+}
+
+
+.pg-di-ricerca {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1200px;
+    margin:auto;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.pg-di-ricerca aside {
+    grid-column: 1/2;
+}
+
+.pg-di-ricerca .big-rest-container {
+    grid-column: 2/5;
+}
