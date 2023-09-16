@@ -76,6 +76,10 @@ header {
     max-height: 80px;
   }
 
+    .navbar .hamburger-menu {
+      margin-left: 15px;
+    }
+
   .navbar .hamburger-menu,
   .navbar .hamburger-menu svg {
     display: block;

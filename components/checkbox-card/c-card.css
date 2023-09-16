@@ -1,17 +1,19 @@
 .checkboxCard {
   max-width: 140px;
+  max-height: 125px;
   margin: 0 5px;
 }
 
 .c-card {
   cursor: pointer;
+  max-height: 125px;
 }
 
 .immagine-checkbox {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  height: auto;
   flex-flow: column wrap;
   max-width: inherit;
   position: relative;
