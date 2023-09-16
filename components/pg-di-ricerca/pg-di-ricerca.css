@@ -1,28 +1,97 @@
-.contenitore-header {
-  display: flex;
-  justify-content: space-between;
-  height: auto;
-  max-height: 80px;
-  min-width: 300px;
-  max-width: 1200px;
-  position: relative;
-  width: 100%;
-}
-
-
 .pg-di-ricerca {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    max-width: 1200px;
-    margin:auto;
-    gap: 10px;
-    margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 1200px;
+  margin: auto;
+  gap: 10px;
+  margin-top: 50px;
 }
 
 .pg-di-ricerca aside {
-    grid-column: 1/2;
+  grid-column: 1/2;
 }
 
 .pg-di-ricerca .big-rest-container {
-    grid-column: 2/5;
+  grid-column: 2/5;
+}
+
+header {
+  box-shadow: none;
+}
+
+.filter-header, .filter-header2 {
+    display: none;
+}
+
+@media (max-width: 768px) {
+  .sidebar-pg-ricerca {
+    display: none;
+  }
+
+  .pg-di-ricerca {
+    display: block;
+    padding: 0 16px 24px 16px;
+  }
+
+  .search-container {
+    position: absolute;
+    top: 50px;
+    width: 95%;
+  }
+
+  .griglia-card-pg-ricerca {
+    width: 100%;
+    overflow-x: scroll;
+    margin-top: 24px;
+    padding: 16px;
+  }
+
+  .immagine-checkbox img {
+    min-width: 150px;
+  }
+
+  .restaurant-card-container {
+    margin-top: 30px;
+  }
+
+  .searchInput-button {
+    display: none;
+  }
+
+  #dish-search {
+    padding-right: 0;
+  }
+
+  .searchbar {
+    height: 50px;
+    background-color: white;
+  }
+
+  .open-restaurant span:last-child {
+    display: none;
+  }
+
+  .contenitore-header {
+    padding-bottom: 20px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.04),
+      0 8px 20px -3px rgba(0, 0, 0, 0.1), 0 4px 8px -2px rgba(0, 0, 0, 0.06);
+  }
+
+    .filter-header, .filter-header2, 
+    .filter-header svg, .filter-header2 svg {
+    display: block;
+    height: 36px;
+    width: 36px;
+    fill: #fb6100;
+    margin-right: 15px;
+  }
+
+  .filter-header {
+    order: 2;
+  }
+
+  .filter-header2 {
+    order: 3;
+  }
+
 }
