@@ -19,7 +19,7 @@ header {
   box-shadow: none;
 }
 
-.filter-header, .filter-header2 {
+.filter-header, .filter-header2, input[name="filter-header"], input[name="filter-header2"] {
     display: none;
 }
 
