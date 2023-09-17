@@ -16,6 +16,10 @@
   width: 100%;
 }
 
+.dropdown-header-ul {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .contenitore-header {
     display: flex;
@@ -27,6 +31,25 @@
     min-width: 300px;
     position: relative;
     flex-direction: row;
+  }
+
+  .hamburger-menu:hover {
+    cursor: pointer;
+  }
+
+  input:checked ~ .hamburger-menu + .dropdown-header-ul {
+    display: block;
+    position: fixed;
+    top: 59px;
+    z-index: 1;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #cacaca;   
+  }
+
+  .dropdown-header-ul li {
+    width: 100%;
   }
 
 }
