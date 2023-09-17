@@ -10,4 +10,14 @@
 @import url(/components/footer-contact/f-contact.css);
 @import url(/components/cookie&p.iva/c&p.iva.css);
 @import url(/components/footer/footer.css);
+@import url(/components/griglia-card-pg-ricerca/griglia-card-pg-ricerca.css);
+@import url(/components/checkbox/checkbox.css);
+@import url(/components/checkbox-card/c-card.css);
+@import url(/components/sidebar-pg-ricerca/sidebar-pg-ricerca.css);
+@import url(/components/totale-sidebar-pg-ricerca/totale-sidebar-pg-ricerca.css);
+@import url(/components/position/position.css);
+@import url(/components/card\ ristorante/card-r.css);
+@import url(/components/searchbar-2/searchbar-2.css);
+@import url(/components/rest-card-contain/rest-card-contain.css);
 @import url(/assets/css/home.css);
+@import url(/components/pg-di-ricerca/pg-di-ricerca.css);
