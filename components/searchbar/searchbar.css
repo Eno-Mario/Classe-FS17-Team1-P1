@@ -128,7 +128,7 @@
     margin: -45px auto auto;
   }
   .placeholder {
-    top: 20px;
+    top: 17px;
     left: 16px;
     text-align: left;
     transition: all 0.3s;
@@ -141,7 +141,7 @@
 
   #searchbar_container input:focus + .placeholder,
   #searchbar_container input:not(:placeholder-shown) + .placeholder {
-    transform: scale(0.8) translateY(-1px) translateX(-30px);
+    transform: scale(0.8) translateY(-5px) translateX(-45px);
     text-overflow: unset;
   }
   #searchbar_container input,

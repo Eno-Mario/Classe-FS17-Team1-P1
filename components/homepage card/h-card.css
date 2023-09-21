@@ -23,10 +23,12 @@
 
 .homepage-card img {
   position: static;
+  width: 85%;
+  height: 85%;
 }
 
 .homepage-card h4 {
-  padding: 8px;
+  padding: 12px;
   position: sticky;
   bottom: 0px;
   background-color: white;
