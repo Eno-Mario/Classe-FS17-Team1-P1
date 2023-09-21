@@ -18,14 +18,14 @@
 
 .griglia-opzioni {
   display: flex;
-  max-height: 185px;
+  max-height: 170px;
   overflow-x: auto;
   max-width: 1200px;
   flex-basis: auto;
 }
 
 .griglia-opzioni * {
-  max-height: 185px;
+  max-height: 170px;
   margin: auto;
   display: inline-block;
   vertical-align: top;
