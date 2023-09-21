@@ -19,14 +19,17 @@
   box-shadow: 0px 3px 4px 0px #dfe0df;
   color: rgb(72, 72, 72);
   max-width: max-content;
+ 
 }
 
 .homepage-card img {
   position: static;
+  width: 85%;
+  height: 85%;
 }
 
 .homepage-card h4 {
-  padding: 8px;
+  padding: 12px;
   position: sticky;
   bottom: 0px;
   background-color: white;
