@@ -12,7 +12,7 @@
   gap: 1rem;
   margin-inline: auto;
   position: relative;
-  margin-top: -184px; 
+  margin-top: -184px;
   color: #425457;
   font-size: 16px;
   text-rendering: optimizeLegibility;
@@ -72,19 +72,19 @@
   pointer-events: none;
 
   position: absolute;
-  padding-left: 20px;
-  left: 0;
+  padding-left: 10px;
+  left: 20px;
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   cursor: text;
-  text-transform: capitalize;
+  text-transform: none;
 }
 #searchbar_container input:focus + .placeholder,
 #searchbar_container input:not(:placeholder-shown) + .placeholder {
-  top: 7px;
-  -webkit-transform: scale(0.7) translateY(-10%) translateX(-8.5px);
-  transform: scale(0.7) translateY(-10%) translateX(-8.5px);
+  top: 12px;
+  -webkit-transform: scale(0.9) translateY(-8%) translateX(-6px);
+  transform: scale(0.9) translateY(-8%) translateX(-6px);
 }
 
 #searchbar_container input,
@@ -93,17 +93,17 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-  -webkit-transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
-  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
-
 .button-mobile {
   display: none;
 }
 
 @media (max-width: 768px) {
+  #searchbar_container {
+    display: flex;
+  }
   #complete_searchbar h1 {
     font-size: 2rem;
     text-align: center;
@@ -125,6 +125,32 @@
   }
 
   #complete_searchbar {
-   margin: -45px auto auto; 
+    margin: -45px auto auto;
+  }
+  .placeholder {
+    top: 20px;
+    left: 16px;
+    text-align: left;
+    transition: all 0.3s;
+    cursor: text;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    right: 16px;
+  }
+
+  #searchbar_container input:focus + .placeholder,
+  #searchbar_container input:not(:placeholder-shown) + .placeholder {
+    transform: scale(0.8) translateY(-1px) translateX(-30px);
+    text-overflow: unset;
+  }
+  #searchbar_container input,
+  .placeholder {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
   }
 }
