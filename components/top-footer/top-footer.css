@@ -61,7 +61,7 @@
     font-weight: bold;
     cursor: pointer;
     margin: 0;
-    padding: 1rem;
+    padding: 2rem;
     padding-bottom: 2rem;
      transition: transform 0.3s;
    
@@ -83,6 +83,7 @@
     padding-bottom: 24px;
     font-size: 14px;
     font-weight: 100;
+    padding-left:1rem;
     
   }
   .list li:hover {
