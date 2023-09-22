@@ -33,3 +33,28 @@
     background-color: #d9d9d9;
 
 }
+
+.vedi-altri {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.vedi-piu svg, .vedi-meno svg{
+  height: 8px;
+  margin-left: 8px;
+}
+
+.vedi-meno, .piu:checked + label .vedi-piu, .checkbox-altri {
+  display: none;
+}
+
+.piu:checked + label .vedi-meno, .piu:checked + label + .checkbox-altri {
+  display: block;
+}
+
+.checkbox-altri {
+  order: -1;
+  width: 100%;
+}
