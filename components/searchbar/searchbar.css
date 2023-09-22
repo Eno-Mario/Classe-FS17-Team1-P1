@@ -1,3 +1,6 @@
+body {
+  margin-top: 200px;
+}
 #complete_searchbar {
   max-width: 95%;
   background-color: #ffffff;
@@ -68,34 +71,23 @@
   font-weight: bold;
 }
 
-.placeholder {
-  pointer-events: none;
+#searchbar_container input:focus::placeholder,
+#searchbar_container input::placeholder {
+  top: 10px;
+  transform: scale(0.7) translateY(-10%) translateX(-30.5px);
+  transition: all 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
 
+#searchbar_container input::placeholder {
+  pointer-events: none;
   position: absolute;
-  padding-left: 10px;
-  left: 20px;
+  left: 30px;
   top: 50%;
-  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   cursor: text;
-  text-transform: none;
-}
-#searchbar_container input:focus + .placeholder,
-#searchbar_container input:not(:placeholder-shown) + .placeholder {
-  top: 12px;
-  -webkit-transform: scale(0.9) translateY(-8%) translateX(-6px);
-  transform: scale(0.9) translateY(-8%) translateX(-6px);
+  transition: all 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
-#searchbar_container input,
-.placeholder {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
 .button-mobile {
   display: none;
 }
@@ -127,30 +119,30 @@
   #complete_searchbar {
     margin: -45px auto auto;
   }
-  .placeholder {
-    top: 17px;
-    left: 16px;
+  #searchbar_container input {
+    padding: 24px 24px 4px;
+  }
+  #searchbar_container input:focus::placeholder,
+  #searchbar_container input::placeholder {
+    transform: scale(0.8) translateY(-10px) translateX(-25px);
+    text-overflow: unset;
+    top: 8px;
+    left: 30px;
+  }
+  #searchbar_container input::placeholder {
+    font-size: smaller;
+    top: 8px;
+    left: 24px;
+    flex: 1;
     text-align: left;
-    transition: all 0.3s;
+    transition: all 0.4s;
     cursor: text;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    right: 16px;
-  }
-
-  #searchbar_container input:focus + .placeholder,
-  #searchbar_container input:not(:placeholder-shown) + .placeholder {
-    transform: scale(0.8) translateY(-5px) translateX(-45px);
-    text-overflow: unset;
-  }
-  #searchbar_container input,
-  .placeholder {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
+    pointer-events: none;
+    transform: translateY(-40%);
+    cursor: text;
+    transition: all 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
   }
 }
