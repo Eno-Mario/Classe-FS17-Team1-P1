@@ -21,10 +21,13 @@ Come avviare il progetto
         hotfix/
    
 3. Commit naming:
-        component: A component
-        docs: Documentation only changes
-        feat: A new feature
-        fix: A bug fix
-        refactor: A code change that neither fixes a bug nor adds a feature
-        style: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
+        component: for a new component;
+        docs: for ocumentation only changes;
+        feat: for a new feature;
+        fix: for a bug fix;
+        refactor: for a code change that neither fixes a bug nor adds a feature;
+        style: change that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
+
+4. Css id/class naming: we use the following name rules >>> block-element-modifier (or block_element_modifier)
+      
    
