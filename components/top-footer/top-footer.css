@@ -51,7 +51,7 @@
   .div-link-list {
     border-bottom: 0.5px solid #dbd9d7;
   }
-  label {
+  .footer_checkbox {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -76,16 +76,16 @@
     margin: 20px;
     font-size: 14px;
   }
-  .toggle-menu:checked + label + .list {
+  .toggle-menu:checked + .footer_checkbox + .list {
     display: block;
   }
 
-  label .link-icon {
+  .footer_checkbox .link-icon {
     height: 9px;
     width: 16px;
     transform: 0.3s ease;
   }
-  .toggle-menu:checked + label .link-icon {
+  .toggle-menu:checked + .footer_checkbox .link-icon {
     transform: rotate(180deg);
   }
   .div-link-list input {
