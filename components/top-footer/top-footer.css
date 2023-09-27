@@ -55,6 +55,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-right: 1rem;
   }
   .div-link-list h2 {
     font-size: 20px ;
