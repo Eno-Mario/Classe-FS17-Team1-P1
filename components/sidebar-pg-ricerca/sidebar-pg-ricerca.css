@@ -54,6 +54,10 @@
   display: block;
 }
 
+.piu:checked + label span svg {
+  transform: rotate(180deg);
+}
+
 .checkbox-altri {
   order: -1;
   width: 100%;
