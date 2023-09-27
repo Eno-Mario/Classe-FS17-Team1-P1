@@ -19,7 +19,7 @@
           </a>
         </div>
         <div class="navbar">
-          <input type="checkbox" name="hamburger-menu" id="hamburger-menu"/>
+          <input type="checkbox" name="hamburger-menu" id="hamburger-menu" />
           <label for="hamburger-menu" class="hamburger-menu">
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -50,7 +50,6 @@
                 </defs>
               </g>
             </svg>
-
           </label>
 
           <ul class="dropdown-header-ul">
@@ -127,8 +126,7 @@
         <h1>Il bello è prenderci gusto</h1>
         <div><h2>Ordina online dai tuoi ristoranti preferiti</h2></div>
         <form id="searchbar_container">
-          <input type="text" placeholder=" " />
-          <span class="placeholder">indirizzo di consegna</span>
+          <input type="text" placeholder="Indirizzo di consegna" />
           <button type="button" class="button" id="search_button">
             <span class="button-mobile">
               <svg viewBox="0 0 20 25" class="">
@@ -138,7 +136,9 @@
                   fill-rule="evenodd"
                 ></path>
               </svg> </span
-            ><span class="button-desktop"><a href="/pg-di-ricerca.html">Trova i ristoranti!</a></span>
+            ><span class="button-desktop"
+              ><a href="/pg-di-ricerca.html">Trova i ristoranti!</a></span
+            >
           </button>
         </form>
       </div>
@@ -469,172 +469,159 @@
       </div>
       <div class="mobile_footer">
         <div class="div-link-list">
-          <details>
-            <summary>
-              <h2>
-                Servizio Clienti
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 11.171582 6.5885787"
-                  class="link-icon"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="m 0.29029267,0.29828979 a 1,1 0 0 1 1.41699993,0 l 3.876,3.87400011 3.8769996,-3.87800011 a 1,1 0 0 1 1.4170008,0 1,1 0 0 1 0,1.41700011 L 6.2942926,6.2942896 a 1,1 0 0 1 -1.417,0 L 0.29429267,1.7112899 a 1,1 0 0 1 -0.004,-1.41300011 z"
-                  ></path>
-                </svg>
-              </h2>
-            </summary>
-            <ul class="list">
-              <li><a href="#"> Domande frequenti</a></li>
-              <li><a href="#"> Accedi </a></li>
-              <li><a href="#"> Registrati su Just Eat</a></li>
-              <li><a href="#"> Miglior Prezzo Garantito</a></li>
-              <li><a href="#"> Scarica l'app di Just Eat</a></li>
-            </ul>
-          </details>
+          <input type="checkbox" id="servizio-clienti" class="toggle-menu" />
+          <label for="servizio-clienti" class="footer_checkbox">
+            <h2>Servizio Clienti</h2>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 11.171582 6.5885787"
+              class="link-icon"
+            >
+              <path
+                fill-rule="evenodd"
+                d="m 0.29029267,0.29828979 a 1,1 0 0 1 1.41699993,0 l 3.876,3.87400011 3.8769996,-3.87800011 a 1,1 0 0 1 1.4170008,0 1,1 0 0 1 0,1.41700011 L 6.2942926,6.2942896 a 1,1 0 0 1 -1.417,0 L 0.29429267,1.7112899 a 1,1 0 0 1 -0.004,-1.41300011 z"
+              ></path>
+            </svg>
+          </label>
+
+          <ul class="list">
+            <li><a href="#"> Domande frequenti</a></li>
+            <li><a href="#"> Accedi </a></li>
+            <li><a href="#"> Registrati su Just Eat</a></li>
+            <li><a href="#"> Miglior Prezzo Garantito</a></li>
+            <li><a href="#"> Scarica l'app di Just Eat</a></li>
+          </ul>
         </div>
         <div class="div-link-list">
-          <details>
-            <summary>
-              <h2>
-                Cucine
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 11.171582 6.5885787"
-                  class="link-icon"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="m 0.29029267,0.29828979 a 1,1 0 0 1 1.41699993,0 l 3.876,3.87400011 3.8769996,-3.87800011 a 1,1 0 0 1 1.4170008,0 1,1 0 0 1 0,1.41700011 L 6.2942926,6.2942896 a 1,1 0 0 1 -1.417,0 L 0.29429267,1.7112899 a 1,1 0 0 1 -0.004,-1.41300011 z"
-                  ></path>
-                </svg>
-              </h2>
-            </summary>
-            <ul class="list">
-              <li><a href="#"> Pizza</a></li>
-              <li><a href="#"> Sushi </a></li>
-              <li><a href="#"> Cibo cinese</a></li>
-              <li><a href="#"> Kebab</a></li>
-              <li><a href="#"> Gelato</a></li>
-              <li><a href="#"> Dolci</a></li>
-              <li><a href="#"> Cibo italiano </a></li>
-              <li><a href="#"> Hamburger</a></li>
-              <li><a href="#"> Panini</a></li>
-              <li><a href="#"> Colazione</a></li>
-              <li><a href="#"> Pollo</a></li>
-              <li><a href="#"> Cibo Messicano</a></li>
-              <li><a href="#"> tutti i tipi di cucine</a></li>
-            </ul>
-          </details>
+          <input type="checkbox" id="cucine" class="toggle-menu" />
+          <label for="cucine" class="footer_checkbox">
+            <h2>Cucine</h2>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 11.171582 6.5885787"
+              class="link-icon"
+            >
+              <path
+                fill-rule="evenodd"
+                d="m 0.29029267,0.29828979 a 1,1 0 0 1 1.41699993,0 l 3.876,3.87400011 3.8769996,-3.87800011 a 1,1 0 0 1 1.4170008,0 1,1 0 0 1 0,1.41700011 L 6.2942926,6.2942896 a 1,1 0 0 1 -1.417,0 L 0.29429267,1.7112899 a 1,1 0 0 1 -0.004,-1.41300011 z"
+              ></path>
+            </svg>
+          </label>
+          <ul class="list">
+            <li><a href="#"> Pizza</a></li>
+            <li><a href="#"> Sushi </a></li>
+            <li><a href="#"> Cibo cinese</a></li>
+            <li><a href="#"> Kebab</a></li>
+            <li><a href="#"> Gelato</a></li>
+            <li><a href="#"> Dolci</a></li>
+            <li><a href="#"> Cibo italiano </a></li>
+            <li><a href="#"> Hamburger</a></li>
+            <li><a href="#"> Panini</a></li>
+            <li><a href="#"> Colazione</a></li>
+            <li><a href="#"> Pollo</a></li>
+            <li><a href="#"> Cibo Messicano</a></li>
+            <li><a href="#"> tutti i tipi di cucine</a></li>
+          </ul>
         </div>
         <div class="div-link-list">
-          <details>
-            <summary>
-              <h2>
-                Città
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 11.171582 6.5885787"
-                  class="link-icon"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="m 0.29029267,0.29828979 a 1,1 0 0 1 1.41699993,0 l 3.876,3.87400011 3.8769996,-3.87800011 a 1,1 0 0 1 1.4170008,0 1,1 0 0 1 0,1.41700011 L 6.2942926,6.2942896 a 1,1 0 0 1 -1.417,0 L 0.29429267,1.7112899 a 1,1 0 0 1 -0.004,-1.41300011 z"
-                  ></path>
-                </svg>
-              </h2>
-            </summary>
-            <ul class="list">
-              <li><a href="#"> Roma</a></li>
-              <li><a href="#"> Milano</a></li>
-              <li><a href="#"> Bologna</a></li>
-              <li><a href="#"> Genova</a></li>
-              <li><a href="#"> Torino</a></li>
-              <li><a href="#"> Ferrara</a></li>
-              <li><a href="#"> Trieste </a></li>
-              <li><a href="#"> Padova</a></li>
-              <li><a href="#"> Parma</a></li>
-              <li><a href="#"> Pisa</a></li>
-              <li><a href="#"> Firenze</a></li>
-              <li><a href="#"> Palermo</a></li>
-              <li><a href="#"> Napoli</a></li>
-              <li><a href="#"> Tutte le città</a></li>
-            </ul>
-          </details>
+          <input type="checkbox" id="città" class="toggle-menu" />
+          <label for="città" class="footer_checkbox">
+            <h2>Città</h2>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 11.171582 6.5885787"
+              class="link-icon"
+            >
+              <path
+                fill-rule="evenodd"
+                d="m 0.29029267,0.29828979 a 1,1 0 0 1 1.41699993,0 l 3.876,3.87400011 3.8769996,-3.87800011 a 1,1 0 0 1 1.4170008,0 1,1 0 0 1 0,1.41700011 L 6.2942926,6.2942896 a 1,1 0 0 1 -1.417,0 L 0.29429267,1.7112899 a 1,1 0 0 1 -0.004,-1.41300011 z"
+              ></path>
+            </svg>
+          </label>
+          <ul class="list">
+            <li><a href="#"> Roma</a></li>
+            <li><a href="#"> Milano</a></li>
+            <li><a href="#"> Bologna</a></li>
+            <li><a href="#"> Genova</a></li>
+            <li><a href="#"> Torino</a></li>
+            <li><a href="#"> Ferrara</a></li>
+            <li><a href="#"> Trieste </a></li>
+            <li><a href="#"> Padova</a></li>
+            <li><a href="#"> Parma</a></li>
+            <li><a href="#"> Pisa</a></li>
+            <li><a href="#"> Firenze</a></li>
+            <li><a href="#"> Palermo</a></li>
+            <li><a href="#"> Napoli</a></li>
+            <li><a href="#"> Tutte le città</a></li>
+          </ul>
         </div>
         <div class="div-link-list">
-          <details>
-            <summary>
-              <h2>
-                Catene
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 11.171582 6.5885787"
-                  class="link-icon"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="m 0.29029267,0.29828979 a 1,1 0 0 1 1.41699993,0 l 3.876,3.87400011 3.8769996,-3.87800011 a 1,1 0 0 1 1.4170008,0 1,1 0 0 1 0,1.41700011 L 6.2942926,6.2942896 a 1,1 0 0 1 -1.417,0 L 0.29429267,1.7112899 a 1,1 0 0 1 -0.004,-1.41300011 z"
-                  ></path>
-                </svg>
-              </h2>
-            </summary>
-            <ul class="list">
-              <li><a href="#">Alice Pizza</a></li>
-              <li><a href="#"> Burger King </a></li>
-              <li><a href="#"> Burgez</a></li>
-              <li><a href="#"> Fratelli La Bufala</a></li>
-              <li><a href="#"> Getir</a></li>
-              <li><a href="#"> Hamerica's</a></li>
-              <li><a href="#"> La Piadineria</a></li>
-              <li><a href="#"> McDonald's</a></li>
-              <li><a href="#"> Old Wild West</a></li>
-              <li><a href="#"> Poke House</a></li>
-              <li><a href="#"> Sushiko</a></li>
-              <li><a href="#"> Zushi</a></li>
-              <li><a href="#"> Tutte le catene</a></li>
-            </ul>
-          </details>
+          <input type="checkbox" id="catene" class="toggle-menu" />
+          <label for="catene" class="footer_checkbox">
+            <h2>Catene</h2>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 11.171582 6.5885787"
+              class="link-icon"
+            >
+              <path
+                fill-rule="evenodd"
+                d="m 0.29029267,0.29828979 a 1,1 0 0 1 1.41699993,0 l 3.876,3.87400011 3.8769996,-3.87800011 a 1,1 0 0 1 1.4170008,0 1,1 0 0 1 0,1.41700011 L 6.2942926,6.2942896 a 1,1 0 0 1 -1.417,0 L 0.29429267,1.7112899 a 1,1 0 0 1 -0.004,-1.41300011 z"
+              ></path>
+            </svg>
+          </label>
+          <ul class="list">
+            <li><a href="#">Alice Pizza</a></li>
+            <li><a href="#"> Burger King </a></li>
+            <li><a href="#"> Burgez</a></li>
+            <li><a href="#"> Fratelli La Bufala</a></li>
+            <li><a href="#"> Getir</a></li>
+            <li><a href="#"> Hamerica's</a></li>
+            <li><a href="#"> La Piadineria</a></li>
+            <li><a href="#"> McDonald's</a></li>
+            <li><a href="#"> Old Wild West</a></li>
+            <li><a href="#"> Poke House</a></li>
+            <li><a href="#"> Sushiko</a></li>
+            <li><a href="#"> Zushi</a></li>
+            <li><a href="#"> Tutte le catene</a></li>
+          </ul>
         </div>
         <div class="div-link-list">
-          <details>
-            <summary>
-              <h2>
-                Chi siamo
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 11.171582 6.5885787"
-                  class="link-icon"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="m 0.29029267,0.29828979 a 1,1 0 0 1 1.41699993,0 l 3.876,3.87400011 3.8769996,-3.87800011 a 1,1 0 0 1 1.4170008,0 1,1 0 0 1 0,1.41700011 L 6.2942926,6.2942896 a 1,1 0 0 1 -1.417,0 L 0.29429267,1.7112899 a 1,1 0 0 1 -0.004,-1.41300011 z"
-                  ></path>
-                </svg>
-              </h2>
-            </summary>
-            <ul class="list">
-              <li><a href="#"> Informazioni su Just Eat</a></li>
-              <li><a href="#"> Diventa partner di Just Eat </a></li>
-              <li><a href="#"> Diventa un rider su Just Eat</a></li>
-              <li><a href="#"> Programma Bug Bounty </a></li>
-              <li><a href="#"> Partner Center</a></li>
-              <li><a href="#"> Lavora con noi</a></li>
-              <li><a href="#"> Media & Press </a></li>
-              <li><a href="#"> Informativa sulla Privacy</a></li>
-              <li><a href="#"> Politica dei cookie</a></li>
-              <li><a href="#"> Termini e Condizioni</a></li>
-              <li><a href="#"> Linea diretta per l'Etica</a></li>
-              <li><a href="#"> Codice Etico</a></li>
-              <li>
-                <a href="#"> Mappa del cibo a domicilio in italia in 2022</a>
-              </li>
-              <li><a href="#"> Informazioni legali</a></li>
-              <li><a href="#"> Sostenibilità</a></li>
-              <li><a href="#"> Vinci i biglietti UEFA Champions League</a></li>
-            </ul>
-          </details>
+          <input type="checkbox" id="chi-siamo" class="toggle-menu" />
+          <label for="chi-siamo" class="footer_checkbox">
+            <h2>Chi siamo</h2>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 11.171582 6.5885787"
+              class="link-icon"
+            >
+              <path
+                fill-rule="evenodd"
+                d="m 0.29029267,0.29828979 a 1,1 0 0 1 1.41699993,0 l 3.876,3.87400011 3.8769996,-3.87800011 a 1,1 0 0 1 1.4170008,0 1,1 0 0 1 0,1.41700011 L 6.2942926,6.2942896 a 1,1 0 0 1 -1.417,0 L 0.29429267,1.7112899 a 1,1 0 0 1 -0.004,-1.41300011 z"
+              ></path>
+            </svg>
+          </label>
+          <ul class="list">
+            <li><a href="#"> Informazioni su Just Eat</a></li>
+            <li><a href="#"> Diventa partner di Just Eat </a></li>
+            <li><a href="#"> Diventa un rider su Just Eat</a></li>
+            <li><a href="#"> Programma Bug Bounty </a></li>
+            <li><a href="#"> Partner Center</a></li>
+            <li><a href="#"> Lavora con noi</a></li>
+            <li><a href="#"> Media & Press </a></li>
+            <li><a href="#"> Informativa sulla Privacy</a></li>
+            <li><a href="#"> Politica dei cookie</a></li>
+            <li><a href="#"> Termini e Condizioni</a></li>
+            <li><a href="#"> Linea diretta per l'Etica</a></li>
+            <li><a href="#"> Codice Etico</a></li>
+            <li>
+              <a href="#"> Mappa del cibo a domicilio in italia in 2022</a>
+            </li>
+            <li><a href="#"> Informazioni legali</a></li>
+            <li><a href="#"> Sostenibilità</a></li>
+            <li><a href="#"> Vinci i biglietti UEFA Champions League</a></li>
+          </ul>
         </div>
       </div>
 
