@@ -74,6 +74,7 @@ header {
 
 .country-selector {
   display: none;
+  transition: all 1s ease;
   
 }
 
@@ -90,6 +91,7 @@ header {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 24px 24px 24px;
   right: 0;
+  z-index: 999;
 }
 
 .flag-country-container:hover .country-selector > .countries {
