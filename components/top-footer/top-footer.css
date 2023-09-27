@@ -1,12 +1,10 @@
-.linkList-wrapper ul li a:hover {
-  text-decoration: underline;
-}
-
 @media (min-width: 1024px) {
   .mobile_footer {
     display: none;
   }
-
+  .linkList-wrapper ul li a:hover {
+    text-decoration: underline;
+  }
   .linkList-wrapper h2 {
     padding-left: 8px;
     font-size: 20px;
@@ -32,12 +30,12 @@
   }
   .linkList-wrapper ul li {
     padding: 8px;
+    font-size: 14px;
   }
 
   .linkList-wrapper ul {
     margin-top: 16px;
   }
-
 }
 
 @media (max-width: 1024px) {
@@ -52,42 +50,50 @@
   }
   .div-link-list {
     border-bottom: 0.5px solid #dbd9d7;
-    align-items: center;
-
   }
-
-   summary {
-    font-size: 20px;
+  .footer_checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 1rem;
+  }
+  .div-link-list h2 {
+    font-size: 20px ;
     font-weight: bold;
     cursor: pointer;
-    margin: 0;
     padding: 1rem;
-     transition: transform 0.3s;
-   
-  }
-  summary h2 {
-    display: flex; 
-    justify-content: space-between;
-    align-items: center;
+    transition: transform 0.3s;
   }
   .list {
     list-style: none;
     padding-left: 0;
     display: none;
-    margin-top: 0;
-    margin-bottom: 1rem;
-    padding-left: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+   
   }
   .list li {
-    padding-bottom: 1rem;
+    font-size: smaller;
+    margin: 20px;
+    font-size: 14px;
   }
-  .list {
+  .toggle-menu:checked + .footer_checkbox + .list {
     display: block;
   }
-  .link-icon {
- 
-  height: 9px;
-  width: 16px;
+
+  .footer_checkbox .link-icon {
+    height: 9px;
+    width: 16px;
+    transform: 0.3s ease;
+  }
+  .toggle-menu:checked + .footer_checkbox .link-icon {
+    transform: rotate(180deg);
+  }
+  .div-link-list input {
+    display: none;
+  }
+ .div-link-list .list li a:hover {
+  text-decoration: underline;
+  transform: 0.3s;
  }
- 
 }
