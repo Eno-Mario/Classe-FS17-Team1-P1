@@ -7,6 +7,7 @@
   max-width: 1200px;
   position: relative;
   width: 100%;
+  margin: auto;
 }
 
 .maxwidth {
@@ -36,6 +37,4 @@
   .hamburger-menu:hover {
     cursor: pointer;
   }
-
-
 }
