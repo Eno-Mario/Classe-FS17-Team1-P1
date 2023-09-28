@@ -20,7 +20,6 @@
 }
 
 .immagine-checkbox .background {
-  background-color: #ff8000;
   background-size: 150%;
   width: 92%;
   border-radius: 8px;
@@ -28,6 +27,38 @@
   padding-top: 60%;
   position: absolute;
   max-width: inherit;
+}
+
+.spesa {
+  background-color: #ff8000;
+}
+
+.pranzo {
+  background-color: #5b3d5b;
+}
+
+.pizza {
+  background-color: #f75e28;
+}
+
+.c-hamburger {
+  background-color: #ffb727;
+}
+
+.fritti {
+  background-color: #c1dade;
+}
+
+.giapponese {
+  background-color: #f2a6b0;
+}
+
+.cinese {
+  background-color: #ff8000;
+}
+
+.americano {
+  background-color: #5b3d5b;
 }
 
 .immagine-checkbox img {
