@@ -1,0 +1,25 @@
+.open-restaurant {
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+}
+.open-restaurant span {
+display: flex;
+align-items: center;
+;
+}
+.open-restaurant span svg {
+    width: 35px;
+    fill: #f36805;
+    padding: 8px;
+}
+
+.open-restaurant span:first-child svg {
+    margin-right: 6px;
+}
+
+.open-restaurant span:first-child svg:hover {
+    background-color: darkgray;
+    border-radius: 100%;
+    cursor: pointer;
+}

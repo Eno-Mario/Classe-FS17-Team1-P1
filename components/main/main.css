@@ -1,0 +1,15 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.download-app {
+  width: 100%;
+  max-width: 1200px;
+}
+
+#complete_searcbar {
+  position: relative;
+  margin: -45px auto auto;
+}

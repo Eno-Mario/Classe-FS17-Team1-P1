@@ -1,0 +1,11 @@
+.banner {
+  max-height: 600px;
+  min-height: 100px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.banner img {
+    width: 100%;
+}

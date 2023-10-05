@@ -1,0 +1,40 @@
+.contenitore-header {
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  max-height: 80px;
+  min-width: 300px;
+  max-width: 1200px;
+  position: relative;
+  width: 100%;
+  margin: auto;
+}
+
+.maxwidth {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.dropdown-header-ul {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .contenitore-header {
+    display: flex;
+
+    align-items: center;
+    height: auto;
+    max-height: 80px;
+    background-color: #fff;
+    min-width: 300px;
+    position: relative;
+    flex-direction: row;
+  }
+
+  .hamburger-menu:hover {
+    cursor: pointer;
+  }
+}

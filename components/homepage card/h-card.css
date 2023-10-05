@@ -1,0 +1,40 @@
+.homepage-card * {
+  margin: 0px;
+  padding: 0px;
+}
+
+.homepage-card a {
+  text-decoration: underline;
+}
+
+.homepage-card {
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  font-size: 1rem;
+  -webkit-box-shadow: 0px 3px 4px 0px #dfe0df;
+  -moz-box-shadow: 0px 3px 4px 0px #dfe0df;
+  -o-box-shadow: 0px 3px 4px 0px #dfe0df;
+  box-shadow: 0px 3px 4px 0px #dfe0df;
+  color: rgb(72, 72, 72);
+  max-width: max-content;
+ 
+}
+
+.homepage-card img {
+  position: static;
+  width: 90%;
+  height: 90%;
+}
+
+.homepage-card h4 {
+  padding: 12px;
+  position: sticky;
+  bottom: 0px;
+  background-color: white;
+}
+
+.homepage-card a:hover {
+  text-decoration: underline;
+}

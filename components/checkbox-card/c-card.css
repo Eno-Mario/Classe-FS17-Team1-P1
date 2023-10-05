@@ -1,0 +1,87 @@
+.checkboxCard {
+  max-width: 140px;
+  margin: 0 5px;
+}
+
+.c-card {
+  cursor: pointer;
+  max-height: 125px;
+}
+
+.immagine-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  flex-flow: column wrap;
+  max-width: inherit;
+  position: relative;
+}
+
+.immagine-checkbox .background {
+  background-size: 150%;
+  width: 92%;
+  border-radius: 8px;
+  display: block;
+  padding-top: 60%;
+  position: absolute;
+  max-width: inherit;
+}
+
+.spesa {
+  background-color: #ff8000;
+}
+
+.pranzo {
+  background-color: #5b3d5b;
+}
+
+.pizza {
+  background-color: #f75e28;
+}
+
+.c-hamburger {
+  background-color: #ffb727;
+}
+
+.fritti {
+  background-color: #c1dade;
+}
+
+.giapponese {
+  background-color: #f2a6b0;
+}
+
+.cinese {
+  background-color: #ff8000;
+}
+
+.americano {
+  background-color: #5b3d5b;
+}
+
+.immagine-checkbox img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  z-index: 1;
+}
+
+.c-card:hover .nomeCucina svg.hidden {
+  transform: translateZ(0) scale(1);
+  opacity: 1;
+  width: 16px;
+  min-width: 16px;
+  margin-right: 8px;
+}
+
+input:checked ~ .c-card .nomeCucina svg.hidden {
+  transform: translateZ(0) scale(1);
+  opacity: 1;
+  width: 16px;
+  min-width: 16px;
+  margin-right: 8px;
+}
+
+input:checked ~ .c-card .nomeCucina * {
+  color: #017a39;
+}

@@ -1,0 +1,72 @@
+#footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(245, 243, 241);
+  width: 100%;
+}
+
+.contacts {
+  width: 100%;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.contacts > div > h2 {
+  padding-bottom: 16px;
+  padding-right: 16px;
+  padding-top: 16px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.inline-icon {
+  list-style-image: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.inline-icon > li {
+  margin-bottom: 16px;
+  margin-right: 16px;
+}
+
+.contacts svg {
+  height: 40px;
+  width: 135px;
+}
+
+.feedback {
+  cursor: pointer;
+}
+
+.feedback p {
+  margin: 0 0 4px 0;
+  font-size: 0.875rem;
+}
+
+.feedback button {
+  text-decoration: underline;
+  font-size: 0.875rem;
+  border: 0;
+}
+
+.follow .inline-icon {
+  width: 302px;
+}
+
+.follow svg {
+  height: 28px;
+  width: 28px;
+  margin-right: 12px;
+}
+
+@media (max-width: 768px) {
+  .contacts {
+    flex-direction: column;
+  }
+}
