@@ -20,7 +20,7 @@ Come avviare il progetto
         component/
         hotfix/
    
-3. Commit naming:
+2. Commit naming:
         component: for a new component;
         docs: for ocumentation only changes;
         feat: for a new feature;
@@ -28,6 +28,6 @@ Come avviare il progetto
         refactor: for a code change that neither fixes a bug nor adds a feature;
         style: change that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
 
-4. Css id/class naming: we use the following name rules >>> block-element-modifier (or block_element_modifier)
+
       
    
